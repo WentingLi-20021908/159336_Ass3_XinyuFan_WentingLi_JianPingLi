@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.editor.EditorFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ic_back"
+            android:contentDescription="@string/back_to_home" />
+
+        <TextView
+            android:id="@+id/tv_fragment_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/create_new_memo"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edittext_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:background="@drawable/shape_title_input"
+        android:ems="10"
+        android:hint="@string/input_title"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textColorHint="@color/editor_hint_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/edittext_title"
+        app:layout_constraintEnd_toStartOf="@+id/edittext_title"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextEditor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edittext_title" />
+
+    <EditText
+        android:id="@+id/editTextEditor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:background="@drawable/shape_editor"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/input_content"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:textColorHint="@color/editor_hint_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_title" />
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditor">
+
+        <ImageView
+            android:id="@+id/insertImage"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/insert_image"
+            android:src="@drawable/ic_insert_image"
+            app:srcCompat="@drawable/ic_insert_image" />
+        <Button
+            android:id="@+id/buttonCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="#D81B60" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:text="@string/save"
+            android:textColor="#00796B" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

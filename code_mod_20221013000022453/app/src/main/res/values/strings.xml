@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_delete">Delete</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_setting">Setting</string>
+    <string name="editor">Editor</string>
+    <string name="floatingactionbutton">FloatingActionButton</string>
+    <string name="input_title">input title</string>
+    <string name="input_content">input content</string>
+    <string name="back_to_home">back to home</string>
+    <string name="create_new_memo">Create New Memo</string>
+    <string name="edit_memo">Edit Memo</string>
+    <string name="title">title:</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="theme">Theme:</string>
+    <string name="day">Day</string>
+    <string name="night">Night</string>
+    <string name="nothing_to_show">Nothing to show.</string>
+    <string name="last_update">Last update:</string>
+    <string name="args_memo">memo</string>
+    <string name="my_memos">My Memos</string>
+    <string name="search">Search</string>
+    <string name="Recycle_Bin">Recycle Bin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_exit_hint">Data is not saved. Are you sure to exit?</string>
+    <string name="hint">Hint</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="finished">finished</string>
+    <string name="unfinished">unfinished</string>
+    <string name="top">top</string>
+    <string name="restore">restore</string>
+    <string name="delete_hint">No memo is selected!</string>
+    <string name="restore_hint">No memo is selected!</string>
+    <string name="args_editable">editable</string>
+    <string name="del_hint">Select the operation to be performed.</string>
+    <string name="insert_image">insert image</string>
+</resources>

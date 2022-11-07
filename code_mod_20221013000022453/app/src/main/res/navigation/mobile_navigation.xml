@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myapplication.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/nav_home_to_editor"
+            app:destination="@id/nav_editor" />
+        <action
+            android:id="@+id/nav_home_to_setting"
+            app:destination="@id/nav_setting" />
+        <argument
+            android:name="@string/args_memo"
+            android:defaultValue="@null"
+            app:argType="com.example.myapplication.model.AMemo"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_recycler_bin"
+            app:destination="@id/nav_recycler_bin" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.myapplication.ui.setting.SettingFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_setting"/>
+
+    <fragment
+        android:id="@+id/nav_editor"
+        android:name="com.example.myapplication.ui.editor.EditorFragment"
+        android:label="@string/editor"
+        tools:layout="@layout/fragment_editor" />
+    <fragment
+        android:id="@+id/nav_recycler_bin"
+        android:name="com.example.myapplication.ui.recycler_bin.RecyclerBinFragment"
+        android:label="@string/Recycle_Bin"
+        tools:layout="@layout/fragment_recycler_bin" />
+</navigation>

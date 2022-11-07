@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_input_bg">#515151</color>
+    <color name="editor_bg">#707070</color>
+    <color name="editor_hint_text_color">#bfbfbf</color>
+    <color name="ic_back_color">#e6e6e6</color>
+    <color name="color_pager_title">@color/white</color>
+    <color name="color_btn_txt">#D5D2D2</color>
+</resources>
